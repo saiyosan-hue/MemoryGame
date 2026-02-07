@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.MemoryGame" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Main colors -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+        <!-- Custom attributes -->
+        <item name="backgroundColor">@color/lightBackground</item>
+        <item name="textColor">@color/black</item>
+
+        <!-- Splash Screen -->
+        <item name="windowSplashScreenBackground">@color/lightBackground</item>
+        <item name="windowSplashScreenAnimatedIcon">@drawable/starry</item>
+        <item name="postSplashScreenTheme">@style/Theme.MemoryGame</item>
+        <item name="windowSplashScreenAnimationDuration">1000</item>
+        <item name="windowSplashScreenIconAnimation">@animator/splash_anim</item>
+
+        <!-- Disable ActionBar -->
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="BackButtonStyle" parent="Widget.MaterialComponents.Button">
+        <item name="backgroundTint">@color/back_button_color</item>
+    </style>
+
+    <style name="Theme.MemoryGame_Dark" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Colors for Dark Theme -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+        <item name="backgroundColor">@color/dark_background</item>
+        <item name="textColor">@color/white</item>
+        <item name="android:windowBackground">@color/dark_background</item>
+
+        <!-- Splash Screen (dark) -->
+        <item name="windowSplashScreenBackground">@color/dark_background</item>
+
+        <!-- Disable ActionBar -->
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+</resources>

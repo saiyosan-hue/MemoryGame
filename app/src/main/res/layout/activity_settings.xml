@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+	android:background="?attr/backgroundColor">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/settings"
+        android:textSize="20sp"
+        android:textColor="?attr/textColor"
+        android:layout_marginBottom="16dp" />
+
+    <RadioGroup
+        android:id="@+id/rgLevel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/rbLevel1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/level_1"
+			android:textColor="?attr/textColor"/>
+
+        <RadioButton
+            android:id="@+id/rbLevel2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/level_2"
+			android:textColor="?attr/textColor"/>
+
+        <RadioButton
+            android:id="@+id/rbLevel3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/level_3"
+			android:textColor="?attr/textColor"/>
+    </RadioGroup>
+
+    <androidx.appcompat.widget.SwitchCompat
+		android:id="@+id/switchTheme"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="@string/dark_theme"
+		android:textColor="?attr/textColor"/>
+
+    <Button
+        android:id="@+id/btnSaveSettings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/save"
+        android:layout_marginTop="16dp" />
+	
+	<Button
+		style="@style/BackButtonStyle"
+        android:id="@+id/btnMain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+		android:text="@string/go_to_main"		/>
+</LinearLayout>
